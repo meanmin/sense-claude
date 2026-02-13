@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "cochl-sense-api",
-      "source": ".claude/skills/cochl-sense-api",
+      "source": "../.claude/skills/cochl-sense-api",
       "description": "Identify and classify environmental sounds (barking, sirens, speech, alarms, baby crying, glass breaking) using Cochl.Sense Cloud API",
       "version": "2.0.0",
       "author": {
