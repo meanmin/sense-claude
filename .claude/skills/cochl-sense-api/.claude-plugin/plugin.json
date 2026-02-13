@@ -6,8 +6,8 @@
     "name": "Cochl",
     "email": "support@cochl.ai"
   },
-  "homepage": "https://github.com/meanmin/cochl-sense-claude-starter",
-  "repository": "https://github.com/meanmin/cochl-sense-claude-starter",
+  "homepage": "https://github.com/meanmin/sense-claude",
+  "repository": "https://github.com/meanmin/sense-claude",
   "license": "MIT",
   "keywords": ["audio", "sound-detection", "machine-learning", "api-integration", "cochl"],
   "skills": ["./SKILL.md"]

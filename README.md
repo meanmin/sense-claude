@@ -17,7 +17,7 @@ With this plugin installed, Claude will automatically help you:
 ### Step 1: Add the Marketplace
 
 ```bash
-/plugin marketplace add meanmin/cochl-sense-claude-starter
+/plugin marketplace add meanmin/sense-claude
 ```
 
 ### Step 2: Install the Plugin
@@ -109,7 +109,7 @@ MIT License - See LICENSE file for details.
 **Ready to add AI-powered sound detection to your project?**
 
 ```bash
-/plugin marketplace add meanmin/cochl-sense-claude-starter
+/plugin marketplace add meanmin/sense-claude
 /plugin install cochl-sense-api
 ```
 
