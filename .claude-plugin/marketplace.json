@@ -1,0 +1,29 @@
+{
+  "name": "cochl-sense-marketplace",
+  "owner": {
+    "name": "Cochl",
+    "email": "support@cochl.ai"
+  },
+  "metadata": {
+    "description": "AI-powered audio detection and classification plugins for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "cochl-sense-api",
+      "source": "./.claude/skills/cochl-sense-api",
+      "description": "Identify and classify environmental sounds (barking, sirens, speech, alarms, baby crying, glass breaking) using Cochl.Sense Cloud API",
+      "version": "2.0.0",
+      "author": {
+        "name": "Cochl",
+        "email": "support@cochl.ai"
+      },
+      "homepage": "https://github.com/meanmin/cochl-sense-claude-starter",
+      "repository": "https://github.com/meanmin/cochl-sense-claude-starter",
+      "license": "MIT",
+      "keywords": ["audio", "sound-detection", "machine-learning", "api-integration", "cochl"],
+      "category": "audio-analysis",
+      "tags": ["audio", "sound", "detection", "AI", "API"]
+    }
+  ]
+}
