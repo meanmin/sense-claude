@@ -26,7 +26,16 @@ With this plugin installed, Claude will automatically help you:
 /plugin install cochl-sense-api
 ```
 
-That's it! Claude now has expert knowledge of the Cochl.Sense API.
+**Note**: If you see `(no content)` after installation, that's normal! The plugin installed successfully.
+
+### Step 3: Verify Installation
+
+To confirm the plugin is working, try asking Claude:
+```
+"Help me set up Cochl audio detection"
+```
+
+Claude will now have expert knowledge of the Cochl.Sense API and guide you through the setup.
 
 ## Quick Start
 
