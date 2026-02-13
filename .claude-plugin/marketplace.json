@@ -1,12 +1,11 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "cochl-sense-marketplace",
+  "version": "1.0.0",
+  "description": "AI-powered audio detection and classification plugins for Claude Code",
   "owner": {
     "name": "Cochl",
     "email": "support@cochl.ai"
-  },
-  "metadata": {
-    "description": "AI-powered audio detection and classification plugins for Claude Code",
-    "version": "1.0.0"
   },
   "plugins": [
     {
