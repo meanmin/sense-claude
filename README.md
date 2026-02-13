@@ -20,22 +20,31 @@ With this plugin installed, Claude will automatically help you:
 /plugin marketplace add meanmin/sense-claude
 ```
 
+> ⚠️ **No output is normal** - The command succeeds silently.
+
 ### Step 2: Install the Plugin
 
 ```bash
 /plugin install cochl-sense-api
 ```
 
-**Note**: If you see `(no content)` after installation, that's normal! The plugin installed successfully.
+> ⚠️ **"(no content)" is normal** - This means the plugin installed successfully! Claude Code doesn't show a success message, but the plugin is now active.
 
-### Step 3: Verify Installation
+### Step 3: ✅ Verify Installation (IMPORTANT!)
 
-To confirm the plugin is working, try asking Claude:
+**This is how you confirm it worked:** Ask Claude to use the skill:
+
 ```
-"Help me set up Cochl audio detection"
+Help me set up Cochl audio detection
 ```
 
-Claude will now have expert knowledge of the Cochl.Sense API and guide you through the setup.
+If you see Claude explain the Cochl API setup process, **the plugin is working!** 🎉
+
+**Alternative verification:** Try this command:
+```
+/skill list
+```
+You should see `cochl-sense-api` in the list.
 
 ## Quick Start
 
