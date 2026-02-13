@@ -1,0 +1,10 @@
+{
+  "format": {
+    "type": "json"
+  },
+  "inference": {
+    "result_summarization": {
+      "interval_margin": 1
+    }
+  }
+}

@@ -1,0 +1,9 @@
+flask==3.0.0
+python-dotenv==1.0.0
+pydub==0.25.1
+cochl>=1.0.0
+soundfile==0.12.1
+numpy==1.26.2
+requests==2.31.0
+pydantic>=2.0.0
+python-dateutil>=2.9.0
