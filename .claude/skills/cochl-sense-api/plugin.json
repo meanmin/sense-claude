@@ -2,6 +2,8 @@
   "name": "cochl-sense-api",
   "description": "Identify and classify environmental sounds using Cochl.Sense Cloud API. Detects 500+ sounds including barking, sirens, speech, alarms, baby crying, and glass breaking.",
   "version": "2.0.0",
+  "installMessage": "✅ cochl-sense-api installed successfully! Try: 'Help me set up Cochl audio detection'",
+  "postInstall": "echo '✅ Installation complete! The skill is ready to use.'",
   "author": {
     "name": "Cochl",
     "email": "support@cochl.ai"
