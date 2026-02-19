@@ -6,7 +6,7 @@ Transform Claude into an audio AI expert. Instantly add sound detection, classif
 
 With this plugin installed, Claude will automatically help you:
 
-- 🎯 **Detect 500+ environmental sounds** in audio files (dog barks, sirens, alarms, baby crying, glass breaking, speech, etc.)
+- 🎯 **Detect 113 environmental sounds** in audio files (dog barks, sirens, alarms, baby crying, glass breaking, speech, etc.)
 - 🔒 **Set up secure API authentication** with best practices (.env files, .gitignore)
 - 🐍 **Handle Python dependencies correctly** (includes workarounds for PyPI issues)
 - 📊 **Parse API responses** and extract sound tags with confidence scores
@@ -179,6 +179,7 @@ This plugin contains:
 
 - **Cochl Dashboard**: [dashboard.cochl.ai](https://dashboard.cochl.ai)
 - **Official API Docs**: [docs.cochl.ai](https://docs.cochl.ai/sense/cochl.sense-cloud-api/gettingstarted/)
+- **Supported Sound Tags**: [docs.cochl.ai/sense/home/soundtags](https://docs.cochl.ai/sense/home/soundtags/) - Complete list of 113 detectable sounds
 - **Claude Code Skills**: [code.claude.com/docs/en/skills](https://code.claude.com/docs/en/skills)
 
 ---
