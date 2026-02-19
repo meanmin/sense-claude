@@ -100,8 +100,8 @@ pip install flask python-dotenv pydub
 # 4. Install cochl WITHOUT dependencies (PyPI workaround)
 pip install cochl --no-deps
 
-# 5. Install cochl dependencies manually (INCLUDING python-dateutil)
-pip install soundfile requests numpy python-dateutil==2.0.0.post0
+# 5. Install cochl dependencies manually (INCLUDING python-dateutil and urllib3)
+pip install soundfile requests numpy python-dateutil urllib3
 ```
 
 **Why this order?**

@@ -75,8 +75,8 @@ echo.
 
 REM 7. cochl dependency 수동 설치
 echo [Step 7] cochl dependencies 설치 중...
-echo    설치 중: soundfile, requests, numpy, python-dateutil, pydantic...
-pip install soundfile requests numpy python-dateutil pydantic -q
+echo    설치 중: soundfile, requests, numpy, python-dateutil, pydantic, urllib3...
+pip install soundfile requests numpy python-dateutil pydantic urllib3 -q
 echo [OK] cochl dependencies 설치 완료
 echo.
 

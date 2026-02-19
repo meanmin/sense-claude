@@ -33,7 +33,7 @@ setup.bat
 3. ✅ pip 업그레이드
 4. ✅ 핵심 라이브러리 설치 (flask, python-dotenv, pydub)
 5. ✅ cochl 패키지 설치 (PyPI 이슈 우회)
-6. ✅ cochl dependencies 설치 (soundfile, numpy, requests, python-dateutil, pydantic)
+6. ✅ cochl dependencies 설치 (soundfile, numpy, requests, python-dateutil, pydantic, urllib3)
 7. ✅ 설치 확인 및 검증
 8. ✅ 프로젝트 구조 설정 (.gitignore, uploads 폴더 등)
 
@@ -129,7 +129,7 @@ pip install flask python-dotenv pydub
 pip install cochl --no-deps
 
 # 4. cochl dependencies 설치
-pip install soundfile requests numpy python-dateutil pydantic
+pip install soundfile requests numpy python-dateutil pydantic urllib3
 
 # 5. 설치 확인
 python -c "import cochl.sense; print('설치 성공!')"
