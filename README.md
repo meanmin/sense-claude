@@ -12,9 +12,13 @@ With this plugin installed, Claude will automatically help you:
 - 📊 **Parse API responses** and extract sound tags with confidence scores
 - 🚀 **Build production-ready applications** with proper error handling
 
-## Installation
+---
+
+## Installation (2 Steps)
 
 ### Step 1: Install the Claude Code Plugin
+
+First, add the plugin to Claude Code:
 
 ```bash
 # Add the marketplace
@@ -34,11 +38,11 @@ claude plugin list
 ```
 You should see `cochl-sense-api` in the list.
 
-Or simply start using it - ask Claude: "Help me set up Cochl audio detection"
+---
 
 ### Step 2: Set Up Python Environment
 
-**You have two options:**
+Now set up the Python dependencies. **Choose one option:**
 
 #### Option A: Automated Setup (Fastest) ⚡
 
@@ -54,15 +58,15 @@ Run our one-command installation script:
 setup.bat
 ```
 
-The script automatically handles everything:
+The script automatically:
 - Detects Python 3.9+ version
 - Creates virtual environment
-- Installs all dependencies in correct order
+- Installs all dependencies in correct order (including urllib3 fix)
 - Validates the installation
 
-**Done!** Skip to [Quick Start](#quick-start) to use it.
+**Done!** Skip to [Usage](#usage) below.
 
-#### Option B: Let Claude Guide You (Recommended for beginners) 🤖
+#### Option B: Let Claude Guide You 🤖
 
 Simply ask Claude:
 
@@ -79,9 +83,18 @@ Claude will:
 
 **That's it!** The plugin makes Claude an expert in Cochl API setup.
 
-## Quick Start
+---
 
-After installation, analyze an audio file:
+## Usage
+
+### Get Your API Key
+
+1. Visit [dashboard.cochl.ai](https://dashboard.cochl.ai)
+2. Sign up or log in
+3. Create a new project
+4. Copy your project key
+
+### Quick Test
 
 **Using the test script:**
 ```bash
@@ -95,6 +108,8 @@ Analyze dog-bark.wav and tell me what sounds are detected
 ```
 
 Claude will write and run the code for you!
+
+---
 
 ## Example Use Cases
 
@@ -110,26 +125,34 @@ Claude will write and run the code for you!
 ```
 **Result:** Claude builds a complete API with file upload, validation, Cochl API integration, and proper error responses.
 
+See the `examples/` folder for a complete Flask web app example.
+
 ### Set up a batch processing pipeline
 ```
 "Process all .wav files in the uploads/ directory and save results to JSON"
 ```
 **Result:** Claude creates a script that processes multiple files, handles failures, and generates structured output.
 
+---
+
 ## What Makes This Different
 
 - **One-command installation**: Run `./setup.sh` and you're done - no manual dependency juggling
 - **No more API documentation hunting**: Claude knows all the details
-- **Handles PyPI quirks**: Includes `--no-deps` workarounds and dependency fixes
+- **Handles PyPI quirks**: Includes `--no-deps` workarounds and urllib3 dependency fixes
 - **Security by default**: Automatically sets up .env files and .gitignore
 - **SDK-specific knowledge**: Knows that Python SDK uses `window_results`, not `events`
 - **Production-ready patterns**: Error handling, validation, and demo modes included
 - **Error-free experience**: Automated scripts prevent common installation pitfalls
 
+---
+
 ## Requirements
 
 - Python 3.9+ (Claude will check and warn if incompatible)
 - A Cochl API key from [dashboard.cochl.ai](https://dashboard.cochl.ai)
+
+---
 
 ## What's Included
 
@@ -140,23 +163,25 @@ This plugin contains:
 - **Environment setup guides**: Platform-specific installation instructions
 - **Troubleshooting database**: Common errors and solutions
 - **Advanced features**: Batch processing, custom configuration, sensitivity tuning
-- **Korean documentation**: Complete guide in Korean ([INSTALL_KR.md](INSTALL_KR.md))
+- **Example Flask app**: Complete web application in `examples/` folder
 
-## Getting Your API Key
+---
 
-Claude will guide you through this automatically, but here's the quick version:
+## Supported Audio Formats
 
-1. Visit [dashboard.cochl.ai](https://dashboard.cochl.ai)
-2. Sign up or log in
-3. Create a new project
-4. Copy your project key
-5. Tell Claude you have it—Claude handles the rest
+- ✅ **Native:** WAV, MP3, OGG
+- ⚠️ **Requires conversion:** MP4, FLAC, M4A (use pydub)
+- 📏 **File size limit:** 16MB recommended
+
+---
 
 ## Support & Documentation
 
 - **Cochl Dashboard**: [dashboard.cochl.ai](https://dashboard.cochl.ai)
 - **Official API Docs**: [docs.cochl.ai](https://docs.cochl.ai/sense/cochl.sense-cloud-api/gettingstarted/)
 - **Claude Code Skills**: [code.claude.com/docs/en/skills](https://code.claude.com/docs/en/skills)
+
+---
 
 ## License
 
@@ -167,8 +192,15 @@ MIT License - See LICENSE file for details.
 **Ready to add AI-powered sound detection to your project?**
 
 ```bash
+# Step 1: Install plugin
 /plugin marketplace add meanmin/sense-claude
 /plugin install cochl-sense-api
+
+# Step 2: Set up Python
+./setup.sh
+
+# Step 3: Start using!
+python test_cochl.py your_audio.wav
 ```
 
-Then just ask Claude: *"Help me detect sounds in my audio files"*
+Or just ask Claude: *"Help me detect sounds in my audio files"*

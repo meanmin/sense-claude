@@ -208,3 +208,6 @@ __marimo__/
 
 # Uploads folder
 uploads/
+
+# macOS
+.DS_Store
