@@ -26,11 +26,15 @@ With this plugin installed, Claude will automatically help you:
 
 > ⚠️ **Silent output is normal** - The commands succeed without showing messages.
 
-**Verify installation:**
+**Verify installation (optional):**
+
+Open a new terminal window and run:
 ```bash
 claude plugin list
 ```
 You should see `cochl-sense-api` in the list.
+
+Or simply start using it - ask Claude: "Help me set up Cochl audio detection"
 
 ### Step 2: Set Up Python Environment
 
