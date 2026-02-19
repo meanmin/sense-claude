@@ -14,43 +14,31 @@ With this plugin installed, Claude will automatically help you:
 
 ## Installation
 
-### Step 1: Add the Marketplace
+### Step 1: Install the Claude Code Plugin
 
 ```bash
+# Add the marketplace
 /plugin marketplace add meanmin/sense-claude
-```
 
-> ⚠️ **No output is normal** - The command succeeds silently.
-
-### Step 2: Install the Plugin
-
-```bash
+# Install the plugin
 /plugin install cochl-sense-api
 ```
 
-> ⚠️ **"(no content)" is normal** - This means the plugin installed successfully! Claude Code doesn't show a success message, but the plugin is now active.
+> ⚠️ **Silent output is normal** - The commands succeed without showing messages.
 
-### Step 3: ✅ Verify Installation (IMPORTANT!)
-
-**This is how you confirm it worked:** Ask Claude to use the skill:
-
-```
-Help me set up Cochl audio detection
-```
-
-If you see Claude explain the Cochl API setup process, **the plugin is working!** 🎉
-
-**Alternative verification:** Try this command:
-```
+**Verify installation:**
+```bash
 /skill list
 ```
 You should see `cochl-sense-api` in the list.
 
-## Quick Start
+### Step 2: Set Up Python Environment
 
-### Option 1: Automated Setup (Recommended)
+**You have two options:**
 
-After plugin installation, you can use our **one-command installation script** that automatically handles all Python dependencies:
+#### Option A: Automated Setup (Fastest) ⚡
+
+Run our one-command installation script:
 
 **macOS/Linux:**
 ```bash
@@ -62,29 +50,47 @@ After plugin installation, you can use our **one-command installation script** t
 setup.bat
 ```
 
-This script automatically:
-- Detects the correct Python version (3.9+)
-- Creates a virtual environment
-- Installs all dependencies in the correct order
-- Handles PyPI issues with the cochl package
+The script automatically handles everything:
+- Detects Python 3.9+ version
+- Creates virtual environment
+- Installs all dependencies in correct order
 - Validates the installation
 
-**That's it!** No manual dependency management needed. See [INSTALL_KR.md](INSTALL_KR.md) for detailed instructions (Korean).
+**Done!** Skip to [Quick Start](#quick-start) to use it.
 
-### Option 2: Let Claude Guide You
+#### Option B: Let Claude Guide You (Recommended for beginners) 🤖
 
 Simply ask Claude:
 
 ```
-"Help me detect sounds in this audio file"
+Help me set up Cochl audio detection
 ```
 
 Claude will:
-1. ✅ Check if you have a Cochl API key (and guide you to get one if needed)
-2. ✅ Set up your Python environment correctly
-3. ✅ Install dependencies with proper workarounds
-4. ✅ Write secure, production-ready code
-5. ✅ Parse results and show you detected sounds with confidence scores
+- Check if you have a Cochl API key
+- Guide you through Python environment setup
+- Install dependencies with proper workarounds
+- Write secure, production-ready code
+- Help you analyze audio files
+
+**That's it!** The plugin makes Claude an expert in Cochl API setup.
+
+## Quick Start
+
+After installation, analyze an audio file:
+
+**Using the test script:**
+```bash
+source venv/bin/activate  # Activate virtual environment
+python test_cochl.py your_audio.wav
+```
+
+**Or ask Claude:**
+```
+Analyze dog-bark.wav and tell me what sounds are detected
+```
+
+Claude will write and run the code for you!
 
 ## Example Use Cases
 
