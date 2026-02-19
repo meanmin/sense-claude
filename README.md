@@ -28,7 +28,7 @@ With this plugin installed, Claude will automatically help you:
 
 **Verify installation:**
 ```bash
-/skill list
+claude plugin list
 ```
 You should see `cochl-sense-api` in the list.
 
