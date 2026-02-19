@@ -48,7 +48,32 @@ You should see `cochl-sense-api` in the list.
 
 ## Quick Start
 
-Once installed, simply ask Claude:
+### Option 1: Automated Setup (Recommended)
+
+After plugin installation, you can use our **one-command installation script** that automatically handles all Python dependencies:
+
+**macOS/Linux:**
+```bash
+./setup.sh
+```
+
+**Windows:**
+```cmd
+setup.bat
+```
+
+This script automatically:
+- Detects the correct Python version (3.9+)
+- Creates a virtual environment
+- Installs all dependencies in the correct order
+- Handles PyPI issues with the cochl package
+- Validates the installation
+
+**That's it!** No manual dependency management needed. See [INSTALL_KR.md](INSTALL_KR.md) for detailed instructions (Korean).
+
+### Option 2: Let Claude Guide You
+
+Simply ask Claude:
 
 ```
 "Help me detect sounds in this audio file"
@@ -83,11 +108,13 @@ Claude will:
 
 ## What Makes This Different
 
+- **One-command installation**: Run `./setup.sh` and you're done - no manual dependency juggling
 - **No more API documentation hunting**: Claude knows all the details
 - **Handles PyPI quirks**: Includes `--no-deps` workarounds and dependency fixes
 - **Security by default**: Automatically sets up .env files and .gitignore
 - **SDK-specific knowledge**: Knows that Python SDK uses `window_results`, not `events`
 - **Production-ready patterns**: Error handling, validation, and demo modes included
+- **Error-free experience**: Automated scripts prevent common installation pitfalls
 
 ## Requirements
 
@@ -97,10 +124,13 @@ Claude will:
 ## What's Included
 
 This plugin contains:
+- **Automated installation scripts**: `setup.sh` (macOS/Linux) and `setup.bat` (Windows)
 - **cochl-sense-api skill**: Core API integration guidance
+- **Test script**: Ready-to-use `test_cochl.py` for immediate audio analysis
 - **Environment setup guides**: Platform-specific installation instructions
 - **Troubleshooting database**: Common errors and solutions
 - **Advanced features**: Batch processing, custom configuration, sensitivity tuning
+- **Korean documentation**: Complete guide in Korean ([INSTALL_KR.md](INSTALL_KR.md))
 
 ## Getting Your API Key
 
